@@ -47,8 +47,9 @@ class TwoLayerNet:
             x = layer.forward(x)
         return x
 
-
+# 入力データxに対してスコアsを予測
 x = np.random.randn(10, 2)
 model = TwoLayerNet(2, 4, 3)
 s = model.predict(x)
 print(s)
+
